@@ -1,0 +1,42 @@
+{
+  "name": "app-utils",
+  "version": "1.0.0",
+  "description": "应用开发中常用的工具以及组件",
+  "main": "dist/index.js",
+  "types": "typings/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel serve test/index.html",
+    "clean": "rimraf ./dist",
+    "build": "npm run clean && rollup -c rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlwaysLoveme/app-utils.git"
+  },
+  "keywords": [
+    "app-utils"
+  ],
+  "author": "zhuxian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlwaysLoveme/app-utils/issues"
+  },
+  "homepage": "https://github.com/AlwaysLoveme/app-utils#readme",
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.50.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4",
+    "vue-loader": "^16.2.0",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "dependencies": {
+    "vue": "^3.0.11",
+    "vue-router": "^4.0.8"
+  }
+}
